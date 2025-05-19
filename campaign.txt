@@ -1,0 +1,13 @@
+
+description:
+This campaign sends daily SMS reminders during the Jewish Omer counting period (between Passover and Shavuot). Users opt in via a web form where they submit their phone number and agree to receive one SMS reminder each evening to count the Omer. The service runs seasonally for 49 days per year.
+
+Reminder: Tonight is day 18 of the Omer. Please remember to count! Reply STOP to unsubscribe.
+
+Reminder: Tonight is day 25 of the Omer. Please remember to count! Reply STOP to unsubscribe.
+
+Optin:
+Users enter their phone number and check a box to receive daily SMS reminders. The form includes opt-out instructions and links to the privacy policy and terms of service.
+
+Here is a screenshot of the consent form users see before signing up for SMS reminders:
+https://drive.google.com/file/d/1t0EQcHaQ6qmXz-CXGFUCdyq4O_aedhDP/view?usp=sharing

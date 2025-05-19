@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SMS Reminder Consent</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f8f9fa;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 500px;
+      margin: 3rem auto;
+      padding: 2rem;
+      background-color: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 1.5rem;
+      color: #333;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 1rem;
+      color: #444;
+      font-weight: 500;
+    }
+
+    input[type="tel"] {
+      width: 100%;
+      padding: 0.6rem;
+      margin-top: 0.3rem;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 1rem;
+    }
+
+    .checkbox-label {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.5rem;
+      margin-top: 1rem;
+      font-size: 0.95rem;
+    }
+
+    .consent-text {
+      margin-top: 1.2rem;
+      font-size: 0.9rem;
+      color: #555;
+      line-height: 1.5;
+    }
+
+    .consent-text a {
+      color: #007bff;
+      text-decoration: none;
+    }
+
+    .consent-text a:hover {
+      text-decoration: underline;
+    }
+
+    button {
+      display: block;
+      width: 100%;
+      margin-top: 2rem;
+      padding: 0.75rem;
+      font-size: 1rem;
+      color: white;
+      background-color: #137e60;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <h1>Sign Up for SMS Sfira Reminders</h1>
+    <form class="sms-consent-form">
+      <label>
+        Phone Number:
+        <input type="tel" name="phone" placeholder="e.g. 123-456-7890" required />
+      </label>
+
+      <label class="checkbox-label">
+        <input type="checkbox" required />
+        <span>I agree to receive daily SMS reminders about the Omer count.</span>
+      </label>
+
+      <div class="consent-text">
+        By signing up, you agree to receive 1 SMS per day during the Omer counting period.
+        Standard message and data rates may apply. You may opt out at any time by replying STOP.
+        Please read our <a href="./privacy-policy.html">Privacy Policy</a> and <a href="terms-of-service.html">Terms of Service</a>.
+      </div>
+
+      <button type="submit">Sign Up</button>
+      <div class="confirmation" id="confirmation" style="display: none;">Your number was successfully added!</div>
+    </form>
+
+    <script>
+      document.querySelector(".sms-consent-form").addEventListener("submit", function (e) {
+        e.preventDefault(); // Prevent actual form submission
+        document.getElementById("confirmation").style.display = "block";
+      });
+    </script>
+
+  </div>
+</body>
+
+</html>
